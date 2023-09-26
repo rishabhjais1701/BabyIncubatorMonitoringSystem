@@ -1,0 +1,114 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.boom{
+        background-image: url(baby.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: rgba(255, 255, 255, 0.2);
+        opacity: 0.9;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+    }
+    
+}
+header {
+    /* background-color: #f2f2f2; */
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: large;
+}
+nav ul li {
+    display: inline;
+    margin-right: 10px; 
+    position: relative;
+}
+nav ul li::after{
+   content:'';
+   height: 3px;
+   width: 0;
+   background: #009688;
+   position: absolute;
+   left:0;
+   bottom: -10px ;
+   transition: 0.5s;
+}
+nav ul li:hover::after{
+    width:100%;
+}
+.hero {
+    /* background-color: #eaf1f9; */
+    padding: 100px;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #060404;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #009688;
+    color:white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 18px;   
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    bottom: -10px;
+}
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.frt{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.features .feature img {
+    max-width: 50px;
+    max-height: 50px;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Baby Incubation</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        h1 {
+            margin-left: 10px;
+        }
+        
+        .logo-welcome {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo {
+            margin-right: 10px;
+        }
+        
+        nav {
+            margin-right: 10px;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 0;
+        }
+        
+        nav li {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="boom">
+          
+        <header>
+            <div class="logo-welcome">
+                <img src="/newlogo.png" alt="Baby Incubation Logo" width="100" height="100" class="logo">
+                <h1>Welcome to Baby Incubation</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#" onclick="redirectToLogin()">Log In</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Providing the Best Care for Your Baby</h2>
+                <p>Monitor and control your baby's incubation environment with our advanced system.</p>
+                <a>&nbsp;</a>
+                <a>&nbsp;</a>
+
+            </div>
+        </section>
+    
+        <section class="features">
+            <div class="frt">
+                <div class="feature">
+                    <img src="/temperature-control.png" alt="Temperature Icon">
+                    <h3>Temperature Control</h3>
+                    <p>Monitor and adjust the incubator temperature to ensure a safe and comfortable environment for your baby.</p>
+                </div>
+                <div class="feature">
+                    <img src="humidity.png" alt="Humidity Icon">
+                    <h3>Humidity Management</h3>
+                    <p>Maintain optimal humidity levels in the incubator for the well-being of your baby.</p>
+                </div>
+                <div class="feature">
+                    <img src="cctv.png" alt="Monitor Icon">
+                    <h3>Real-Time Monitoring</h3>
+                    <p>Keep track of vital parameters such as temperature, humidity, and more through our intuitive monitoring interface.</p><br><br>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2023 Baby Incubation. All rights reserved.</p>
+    </footer>
+    <script>
+        function redirectToLogin() {
+            window.location.href = "login.html";
+        }
+        
+        function toggleModal(modalId) {
+            // Implementation for toggling the modal goes here
+        }
+    </script>
+    
+    
+</body>
+</html>
